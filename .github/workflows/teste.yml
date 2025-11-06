@@ -18,3 +18,9 @@ jobs:
 
       - name: Executar script
         run: python main.py
+        
+      - name: Instalar dependências
+        run: pip install pytest
+
+      - name: Executar testes
+        run: pytest -v
